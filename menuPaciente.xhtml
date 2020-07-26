@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Menú - Paciente</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h2>Menu principal</h2>
+            <div style="padding:15px;">
+                <h:outputLabel for="btnSolicitarCita">
+                    <h:outputText value="Solicitar cita"/>
+                </h:outputLabel>
+                <h:commandButton id="btnSolicitarCita" value="Aceptar" action="#{menuPaciente.abrirSolicitarCita()}"/>
+            </div>
+            <div style="padding:15px;">
+                <h:outputLabel for="btnCancelarCita">
+                    <h:outputText value="Cancelar cita"/>
+                </h:outputLabel>
+                <h:commandButton id="btnCancelarCita" value="Aceptar" action="#{menuPaciente.abrirCancelarCita()}"/>
+            </div>
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnConsultarCitas">
+                    <h:outputText value="Consultar citas"/>
+                </h:outputLabel>
+                <h:commandButton id="btnConsultarCitas" value="Aceptar" action="#{menuPaciente.abrirConsultarCitas()}"/>    
+            </div>   
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnConsultarDiagnosticos">
+                    <h:outputText value="Consultar diagnósticos"/>
+                </h:outputLabel>
+                <h:commandButton id="btnConsultarDiagnosticos" value="Aceptar" action="#{menuPaciente.abrirConsultarDiagnosticos()}"/>    
+            </div>
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnConsultarTratamientos">
+                    <h:outputText value="Consultar tratamientos"/>
+                </h:outputLabel>
+                <h:commandButton id="btnConsultarTratamientos" value="Aceptar" action="#{menuPaciente.abrirConsultarTratamientos()}"/>    
+            </div>
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnConsultarHospitalizaciones">
+                    <h:outputText value="Consultar hospitalizaciones"/>
+                </h:outputLabel>
+                <h:commandButton id="btnConsultarHospitalizaciones" value="Aceptar" action="#{menuSecretaria.abrirConsultarHospitalizaciones()}"/>    
+            </div>      
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnCerrarSesion">
+                    <h:outputText value="Cerrar sesión"/>
+                </h:outputLabel>
+                <h:commandButton id="btnCerrarSesion" value="Aceptar" action="#{menu.cerrarSesion()}"/>    
+            </div>             
+        </h:form>
+    </h:body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Menú - Doctor</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h2>Menu principal</h2>
+            <div style="padding:15px;">
+                <h:outputLabel for="btnCancelarCita">
+                    <h:outputText value="Cancelar cita de paciente"/>
+                </h:outputLabel>
+                <h:commandButton id="btnCancelarCita" value="Aceptar" action="#{menuDoctor.abrirCancelarCita()}"/>
+            </div>
+            <div style="padding:15px;">
+                <h:outputLabel for="btnCrearCita">
+                    <h:outputText value="Crear cita"/>
+                </h:outputLabel>
+                <h:commandButton id="btnCrearCita" value="Aceptar" action="#{menuDoctor.abrirCrearCita()}"/>
+            </div>
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnAtenderCita">
+                    <h:outputText value="Atender cita"/>
+                </h:outputLabel>
+                <h:commandButton id="btnAtenderCita" value="Aceptar" action="#{menuDoctor.abrirAtenderCita()}"/>    
+            </div>  
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnConsultarCitas">
+                    <h:outputText value="Consultar citas"/>
+                </h:outputLabel>
+                <h:commandButton id="btnConsultarCitas" value="Aceptar" action="#{menuDoctor.abrirConsultarCitas()}"/>    
+            </div> 
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnDiagnosticosAsociados">
+                    <h:outputText value="Ver diagnosticos asociados"/>
+                </h:outputLabel>
+                <h:commandButton id="btnDiagnosticosAsociados" value="Aceptar" action="#{menuDoctor.abrirDiagnosticosAsociados()}"/>    
+            </div> 
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnTratamientosAsociados">
+                    <h:outputText value="Ver tratamientos asociados"/>
+                </h:outputLabel>
+                <h:commandButton id="btnTratamientosAsociados" value="Aceptar" action="#{menuDoctor.abrirTratamientosAsociados()}"/>    
+            </div> 
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnTodosDiagnosticos">
+                    <h:outputText value="Ver diagnosticos"/>
+                </h:outputLabel>
+                <h:commandButton id="btnTodosDiagnosticos" value="Aceptar" action="#{menuDoctor.abrirTodosDiagnosticos()}"/>    
+            </div> 
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnTodosTratamientos">
+                    <h:outputText value="Ver tratamientos"/>
+                </h:outputLabel>
+                <h:commandButton id="btnTodosTratamientos" value="Aceptar" action="#{menuDoctor.abrirTodosTratamientos()}"/>    
+            </div>
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnConsultarHospitalizaciones">
+                    <h:outputText value="Consultar hospitalizaciones"/>
+                </h:outputLabel>
+                <h:commandButton id="btnConsultarHospitalizaciones" value="Aceptar" action="#{menuDoctor.abrirConsultarHospitalizacion()}"/>    
+            </div>      
+            <div style="padding:15px;">             
+                <h:outputLabel for="btnCerrarSesion">
+                    <h:outputText value="Cerrar sesión"/>
+                </h:outputLabel>
+                <h:commandButton id="btnCerrarSesion" value="Aceptar" action="#{menu.cerrarSesion()}"/>    
+            </div>             
+        </h:form>
+    </h:body>
+</html>

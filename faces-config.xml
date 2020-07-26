@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+    <navigation-rule>
+        <from-view-id>index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>iniciarMenuSecretaria</from-outcome>
+            <to-view-id>vistas/menuSecretaria.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>inicioSesionDoctor</from-outcome>
+            <to-view-id>vistas/menuDoctor.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>            
+    
+  <navigation-rule>
+        <from-view-id>index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>iniciarMenuEnfermera</from-outcome>
+            <to-view-id>vistas/menuEnfermera.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>  
+    
+    <navigation-rule>
+        <from-view-id>index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>iniciarMenuPaciente</from-outcome>
+            <to-view-id>vistas/menuPaciente.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>  
+  
+    <navigation-rule>
+        <from-view-id>vistas/menu.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>abrirIngresoEstudiante</from-outcome>
+            <to-view-id>vistas/ingresoEstudiante.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>vistas/menu.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>abrirConsultarEstudiante</from-outcome>
+            <to-view-id>vistas/consultarEstudiante.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>vistas/menu.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>abrirConsultarReserva</from-outcome>
+            <to-view-id>vistas/consultarReserva.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>   
+    
+    <navigation-rule>
+        <from-view-id>vistas/menu.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>cerrarSesion</from-outcome>
+            <to-view-id>index.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>    
+    
+    <navigation-rule>
+        <from-view-id>vistas/menuEstudiante.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>cerrarSesion</from-outcome>
+            <to-view-id>index.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>      
+  
+  
+    <navigation-rule>
+        <from-view-id>vistas/ingresoEstudiante.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>verEstudiante</from-outcome>
+            <to-view-id>vistas/estudiante.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>vistas/ingresoEstudiante.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>estudianteOcupado</from-outcome>
+            <to-view-id>vistas/validacionEstudiante.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>       
+    
+    
+  
+    <navigation-rule>
+        <from-view-id>vistas/consultarEstudiante.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>estudianteVer</from-outcome>
+            <to-view-id>vistas/estudianteConsultado.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>                                                                                                                                                                                                                        
+      
+    <navigation-rule>
+        <from-view-id>vistas/consultarReserva.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>mostarDatosReserva</from-outcome>
+            <to-view-id>vistas/datosReserva.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>    
+    
+    <navigation-rule>
+        <from-view-id>vistas/menuEstudiante.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>abrirAgregarReserva</from-outcome>
+            <to-view-id>vistas/AgregarReserva.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>vistas/menuEstudiante.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>abrirCancelarReserva</from-outcome>
+            <to-view-id>vistas/CancelarReserva.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>      
+    
+    <navigation-rule>
+        <from-view-id>vistas/estudianteConsultado.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>mostarDatosReserva</from-outcome>
+            <to-view-id>vistas/datosReserva.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>     
+    
+    <navigation-rule>
+        <from-view-id>vistas/estudianteConsultado.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>incidentes</from-outcome>
+            <to-view-id>vistas/consultarIncidente.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>      
+    
+    <navigation-rule>
+        <from-view-id>vistas/datosReserva.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>datosReservaVolver</from-outcome>
+            <to-view-id>vistas/menu.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>  
+    
+    <navigation-rule>
+        <from-view-id>vistas/consultarIncidente.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>regresarIncidente</from-outcome>
+            <to-view-id>vistas/menu.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>            
+                     
+    <navigation-rule>
+        <from-view-id>vistas/estudiante.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>regresoDesdeEstudiante</from-outcome>
+            <to-view-id>vistas/menu.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>  
+    
+    <navigation-rule>
+        <from-view-id>vistas/estudianteConsultado.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>regresoDesdeEstudiante</from-outcome>
+            <to-view-id>vistas/menu.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>                                                    
+        
+
+</faces-config>

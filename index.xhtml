@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Hospital TEC</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h2>Inicio de sesión</h2>
+            <div style="padding:15px;">
+                <h:outputLabel for="txtUsuario">
+                    <h:outputText value="Ingrese su número de cédula: "/>
+                </h:outputLabel>
+                <h:inputText id="txtUsuario" value="#{Inicio.cedula}"/>
+            </div>
+            <div style="padding:15px;">
+                <h:outputLabel for="txtContrasena">
+                    <h:outputText value="Ingrese la contraseña: "/>
+                </h:outputLabel>
+                <h:inputSecret id="txtContrasena" value="#{Inicio.contrasenia}"/>
+            </div> 
+            <div style="padding:15px;">
+                <h:commandButton id="btIniciarSecretaria" value="Iniciar como secretaria" action="#{Inicio.iniciarMenuSecretaria()}"/>
+            </div>   
+            <div style="padding:15px;">
+                <h:commandButton id="btIniciarDoctor" value="Iniciar como doctor" action="#{Inicio.iniciarMenuDoctor()}"/>
+            </div>             
+            <div style="padding:15px;">
+                <h:commandButton id="btIniciarPaciente" value="Iniciar como paciente" action="#{Inicio.iniciarMenuPaciente()}"/>
+            </div>            
+            <div style="padding:15px;">
+                <h:commandButton id="btIniciarEnfermer" value="Iniciar como enfermera" action="#{Inicio.iniciarMenuEnfermera()}"/>
+            </div>  
+        </h:form>
+    </h:body>
+</html>
+
